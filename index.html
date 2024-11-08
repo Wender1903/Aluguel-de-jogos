@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de jogos</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <p class="logo__wender-games"><img src="./img/controle.png" style="width: 60px; margin: 0;" alt="Wender Games" > Wender Games</p>
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Aluguel de <span class="page-title__emphasis">Games</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="https://i.pinimg.com/originals/78/24/77/7824778e3db54feaabbeb400826a39e8.png" alt="Capa do jogo Midnight Club 3">
+                    </div>
+                    <p class="dashboard__item__name">Midnight club 3</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="https://i.pinimg.com/474x/e8/44/1f/e8441fcf95e71849f2032290751c39ff.jpg" alt="Capa do jogo Ben 10 Vilgax Attacks">
+                    </div>
+                    <p class="dashboard__item__name">Ben 10</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="https://www.vgdb.com.br/gf/fotos/games/media_19270/dragon-ball-z-budokai-tenkaichi-3-19270.jpg" alt="Capa do jogo Dragon Ball Z Tenkaichi 3">
+                    </div>
+                    <p class="dashboard__item__name dashboard__item__name--rented">Dragon Ball Z T3</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </li>
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
